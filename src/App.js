@@ -1,7 +1,10 @@
+import bg from './images/wp1874155.jpg';
 import logo from './logo.png';
 import './App.css';
 import { Button, Pane, Text, majorScale, ButtonIcon, CogIcon, EditIcon, ManualIcon, TrashIcon, SearchIcon, CaretDownIcon, IconButton, TickIcon  } from 'evergreen-ui';
+import { Popover, Position, PeopleIcon, CircleArrowRightIcon } from 'evergreen-ui'
 import { BrowserRouter, Link } from 'react-router-dom';
+import { slide as Menu } from 'react-burger-menu';
 
 import Admin from "./admin_views/admin.js";
 
@@ -11,7 +14,8 @@ function App() {
   return (	
 	<BrowserRouter>
     <div className="App">
-		<Pane display="flex" alignItems="center" marginX={majorScale(2)}>
+		<Pane display="flex" alignItems="right" marginX={majorScale(162)}>
+			
 			<Link to="/"><IconButton elevation="4" height={56} icon={ManualIcon} marginRight={majorScale(2)} /></Link>
 			<IconButton elevation="4" height={56} icon={CogIcon} marginRight={majorScale(2)} onclick="Admin();"/>
 			<IconButton elevation="4" height={56} icon={SearchIcon} marginRight={majorScale(2)} />
