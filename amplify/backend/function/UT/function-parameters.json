@@ -1,0 +1,13 @@
+{
+  "permissions": {},
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "utReact",
+      "environmentVariableName": "UTReact"
+    }
+  ],
+  "secretNames": [
+    "Nicki"
+  ]
+}

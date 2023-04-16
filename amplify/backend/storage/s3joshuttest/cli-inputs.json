@@ -1,0 +1,13 @@
+{
+  "resourceName": "s3joshuttest",
+  "bucketName": "josh-ut-test",
+  "policyUUID": "05aadcf1",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ"
+  ]
+}

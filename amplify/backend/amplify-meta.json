@@ -1,0 +1,87 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifyf7f344069fd44-staging-230042-authRole",
+      "UnauthRoleArn": "arn:aws:iam::445861050992:role/amplify-amplifyf7f344069fd44-staging-230042-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::445861050992:role/amplify-amplifyf7f344069fd44-staging-230042-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-amplifyf7f344069fd44-staging-230042-deployment",
+      "UnauthRoleName": "amplify-amplifyf7f344069fd44-staging-230042-unauthRole",
+      "StackName": "amplify-amplifyf7f344069fd44-staging-230042",
+      "StackId": "arn:aws:cloudformation:us-east-2:445861050992:stack/amplify-amplifyf7f344069fd44-staging-230042/2efc0600-db18-11ed-8cb5-0a79d2f3c311",
+      "AmplifyAppId": "d2yxa9sfklvzj8"
+    }
+  },
+  "auth": {
+    "UTTest": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OPTIONAL",
+        "mfaTypes": [
+          "SMS",
+          "TOTP"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_SYMBOLS",
+            "REQUIRES_UPPERCASE"
+          ]
+        },
+        "signupAttributes": [],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "output": {
+        "UserPoolId": "us-east-2_eHta6cuP2",
+        "AppClientIDWeb": "5ll7mdn3dpipqk5s7b1qe3s090",
+        "AppClientID": "3so83vceg263etugigl0illcv5",
+        "IdentityPoolId": "us-east-2:32511875-dfa7-4bd7-b908-262d8dcf521c",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-2:445861050992:userpool/us-east-2_eHta6cuP2",
+        "IdentityPoolName": "testAuthIdentityPool__staging",
+        "UserPoolName": "UTTest",
+        "CreatedSNSRole": "arn:aws:iam::445861050992:role/snsb924abaf230042-staging"
+      },
+      "lastPushTimeStamp": "2023-04-15T23:32:52.397Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyf7f344069fd44-staging-230042-deployment/amplify-cfn-templates/auth/UTTest-cloudformation-template.json",
+        "logicalId": "authUTTest"
+      },
+      "lastPushDirHash": "ZywLOktP6WULHVcNARxToycVw+c="
+    }
+  },
+  "storage": {
+    "s3joshuttest": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3",
+      "output": {
+        "BucketName": "josh-ut-test230042-staging",
+        "Region": "us-east-2"
+      },
+      "lastPushTimeStamp": "2023-04-15T23:32:52.745Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyf7f344069fd44-staging-230042-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storages3joshuttest"
+      }
+    }
+  },
+  "function": {
+    "UT": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": []
+    }
+  }
+}
