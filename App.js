@@ -7,7 +7,6 @@ import { BrowserRouter, Link } from 'react-router-dom';
 
 import Admin from "./admin_views/admin.js";
 
-
 function App() {
 		
   return (	
