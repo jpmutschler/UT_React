@@ -8,7 +8,7 @@ import { Table } from 'evergreen-ui'
 
 const Admin = () => {
   return (
-    <div className="App1">
+    <div className="App">
 		<Pane display="flex" alignItems="left" marginX={majorScale(2)}>
 			<img src={logo} alt="logo" height={30} />
 		</Pane>
