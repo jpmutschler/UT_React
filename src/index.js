@@ -11,7 +11,7 @@ import { Popover, Position, PeopleIcon, CircleArrowRightIcon } from 'evergreen-u
 import { slide as Menu } from 'react-burger-menu';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-    function App1() {
+    function App_x() {
           <div className="App">;	
               <Pane display="flex" alignItems="right" marginX={majorScale(162)}>
                 

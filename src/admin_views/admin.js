@@ -6,7 +6,7 @@ import { ButtonIcon, CogIcon, EditIcon, ManualIcon, TrashIcon, SearchIcon, Caret
 import { IconButton, TickIcon } from 'evergreen-ui'
 import { Table } from 'evergreen-ui'
 
-const Admin1 = () => {
+const Admin = () => {
   return (
     <div className="App1">
 		<Pane display="flex" alignItems="left" marginX={majorScale(2)}>
@@ -19,4 +19,4 @@ const Admin1 = () => {
   );
 };
 
-export default Admin1;
+export default Admin;

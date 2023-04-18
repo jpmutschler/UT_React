@@ -3,12 +3,11 @@ import logo from './logo.png';
 import './App.css';
 import { Button, Pane, Text, majorScale, ButtonIcon, CogIcon, EditIcon, ManualIcon, TrashIcon, SearchIcon, CaretDownIcon, IconButton, TickIcon  } from 'evergreen-ui';
 import { Popover, Position, PeopleIcon, CircleArrowRightIcon } from 'evergreen-ui'
-import { slide as Menu } from 'react-burger-menu';
 
 import Admin from "./admin_views/admin.js";
 
 
-function App1() {
+function App() {
   	<div className="App">;	
 		  	<Pane display="flex" alignItems="right" marginX={majorScale(162)}>
 					
@@ -28,4 +27,4 @@ function App1() {
 	</div>
 };
 
-export default App1;
+export default App();

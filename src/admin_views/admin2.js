@@ -36,7 +36,6 @@ import './App.css';
 import { Button, Pane, Text, majorScale, ButtonIcon, CogIcon, EditIcon, ManualIcon, TrashIcon, SearchIcon, CaretDownIcon, IconButton, TickIcon  } from 'evergreen-ui';
 import { Popover, Position, PeopleIcon, CircleArrowRightIcon } from 'evergreen-ui'
 import { BrowserRouter, Link } from 'react-router-dom';
-//import { slide as Menu } from 'react-burger-menu';
 
 import Admin from "./admin_views/admin.js";
 
